@@ -49,4 +49,4 @@ jobs:
         app-name: 'AngularTour-test'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6fccf899b3ad4d0cbcec24e473d6ad5d }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ab100670ab224a7a901ea9dc3b008ac6 }}/jdelacruz087/angular-tour-app:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ab100670ab224a7a901ea9dc3b008ac6 }}/angular-tour-app:${{ github.sha }}'
