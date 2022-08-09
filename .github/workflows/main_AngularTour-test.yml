@@ -31,7 +31,7 @@ jobs:
       with:
         context: ./angular-tour-of-heroes/
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ab100670ab224a7a901ea9dc3b008ac6 }}/jdelacruz087/angular-tour-app:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ab100670ab224a7a901ea9dc3b008ac6 }}/angular-tour-app:${{ github.sha }}
         file: ./angular-tour-of-heroes/Dockerfile
 
   deploy:
