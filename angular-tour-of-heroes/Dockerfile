@@ -2,9 +2,9 @@ FROM node:latest as build
 
 WORKDIR /app
 #COPY ./package*.json .
-#RUN npm install
 COPY . .
-RUN npm ci && npm run build 
+RUN npm install
+RUN npm run build 
 
 FROM nginx:latest 
 
